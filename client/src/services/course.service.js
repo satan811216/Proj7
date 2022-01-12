@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/courses";
+const API_URL = "http://35.221.188.246:8080/api/courses";
 
 class CourseService {
   post(title, description, price) {
