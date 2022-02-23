@@ -70,15 +70,16 @@ const RegisterComponent = () => {
           />
         </div>
         <br />
-        <div className="form-group">
-          <label htmlFor="password">role</label>
-          <input
-            onChange={handleChangeRole}
-            type="text"
-            className="form-control"
-            name="role"
-          />
-        </div>
+        <select
+          htmlFor="role"
+          onChange={handleChangeRole}
+          type="text"
+          className="form-select"
+        >
+          <option selected>Open this select menu</option>
+          <option value="student">student</option>
+          <option value="instructor">instructor</option>
+        </select>
         <br />
         <button onClick={handleRegister} className="btn btn-primary">
           <span>Register</span>

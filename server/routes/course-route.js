@@ -136,7 +136,7 @@ router.get("/instructor/:_instructor_id", (req, res) => {
 
 router.get("/student/:_student_id", (req, res) => {
   let { _student_id } = req.params;
-  Course.find({ student: _student_id })
+  Course.find({ students: _student_id })
     .populate("instructor", ["username", "email"])
     .then((courses) => {
       res.status(200).send(courses);

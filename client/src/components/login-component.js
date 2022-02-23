@@ -56,7 +56,7 @@ const LoginComponent = (props) => {
           <label htmlFor="password">Password</label>
           <input
             onChange={handleChangePassword}
-            type="text"
+            type="password"
             className="form-control"
             name="password"
           />
